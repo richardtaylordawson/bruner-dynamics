@@ -1,6 +1,6 @@
 <p align="center">
   <a href="">
-    <img src="https://richardtaylordawson.github.io/bruner-dynamics/src/images/logo-dark.png" alt="Bruner logo" width=118 height=40>
+    <img src="`https://richardtaylordawson.github.io/bruner-dynamics/src/images/logo-dark.png`" alt="Bruner logo" width=118 height=40>
   </a>
 
   <h3 align="center">Bruner Dynamics</h3>
