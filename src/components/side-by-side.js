@@ -1,12 +1,19 @@
 import React from "react"
+import PropTypes from 'prop-types'
 import styled from "@emotion/styled"
 
-import SideBySideImg from "../images/devices.png"
-
 const Container = styled.section`
+  padding: 90px;
   background-color: #F6F6F6;
-  color: #202E39;
-  padding: 90px 28rem;
+
+  &.white-bg {
+    background-color: white;
+  }
+`
+
+const Constraint = styled.section`
+  max-width: 1032px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
 `
@@ -21,16 +28,24 @@ const ImageContainer = styled.div`
   width: 50%;
 `
 
-const SideBySide = () => (
-  <Container>
-    <ImageContainer>
-      <img src={SideBySideImg} alt="" />
-    </ImageContainer>
-    <ContentContainer>
-      <h3>We’re Here to Brand<br/>Everything, Everywhere,<br/> Anytime</h3>
-      <p>Flat screen tv? Wireless device? Tablet? Laptop? We can put our brand image on all of them. We can do it whenever we want, but mostly you’ll see our logo on your screen when you’re experiencing technical difficulties. This way, you will associate  our brand with some of your most emotional moments.</p>
-    </ContentContainer>
+const SideBySide = ({children, img, imgAlt, containerClasses}) => (
+  <Container className={containerClasses}>
+    <Constraint>
+      <ImageContainer>
+        <img src={img} alt={imgAlt} />
+      </ImageContainer>
+      <ContentContainer>
+        {children}
+      </ContentContainer>
+    </Constraint>
   </Container>
 )
+
+SideBySide.propTypes = {
+  children: PropTypes.node.isRequired,
+  img: PropTypes.string,
+  imgAlt: PropTypes.string,
+  containerClasses: PropTypes.string
+}
 
 export default SideBySide

@@ -16,6 +16,8 @@ const HeroContent = styled.div`
   max-width: 830px;
   margin: auto;
   padding: 103px 0 47px 0;
+
+  h1 { margin: 0; }
 `
 
 const Hero = () => (

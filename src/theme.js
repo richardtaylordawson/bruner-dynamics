@@ -8,6 +8,14 @@ const colors = {
   "boxShadow": "rgba(0,0,0,.2)"
 }
 
+const constraint = [
+  "max-width: 1032px;",
+  "margin: 0 auto;",
+  "display: flex;",
+  "flex-direction: row;",
+  "height: 100%;"
+]
+
 const breakpoints = {
   "small": [0, 640],
   "medium": [641, 1024],
@@ -25,4 +33,4 @@ Object.keys(breakpoints).map(key => {
     : `@media screen and (min-width: ${breakpoints[key][0]}px) and (max-width: ${breakpoints[key][1]}px)`
 })
 
-module.exports = { colors, breakpoints }
+module.exports = { colors, constraint, breakpoints }
