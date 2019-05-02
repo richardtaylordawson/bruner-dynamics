@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
 
-import { colors, breakpoints, constraint } from "../theme"
+import { colors, breakpoints, constraint } from "../theme/index"
 
 import LightLogo from "../images/logo-white.png"
 import DarkLogo from "../images/logo-dark.png"

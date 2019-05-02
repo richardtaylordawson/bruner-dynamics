@@ -1,22 +1,9 @@
 import React from "react"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
-const Container = styled.section`
-  padding: 90px;
-  background-color: #F6F6F6;
-
-  &.white-bg {
-    background-color: white;
-  }
-`
-
-const Constraint = styled.section`
-  max-width: 1032px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-`
+import Container from "./../style/container"
+import Row from "./../style/row"
 
 const ContentContainer = styled.div`
   flex-basis: auto;
@@ -28,16 +15,16 @@ const ImageContainer = styled.div`
   width: 50%;
 `
 
-const SideBySide = ({children, img, imgAlt, containerClasses}) => (
-  <Container className={containerClasses}>
-    <Constraint>
+const SideBySide = ({children, img, imgAlt, bgColor}) => (
+  <Container bgColor={bgColor}>
+    <Row flexRow={true}>
       <ImageContainer>
         <img src={img} alt={imgAlt} />
       </ImageContainer>
       <ContentContainer>
         {children}
       </ContentContainer>
-    </Constraint>
+    </Row>
   </Container>
 )
 
@@ -45,7 +32,7 @@ SideBySide.propTypes = {
   children: PropTypes.node.isRequired,
   img: PropTypes.string,
   imgAlt: PropTypes.string,
-  containerClasses: PropTypes.string
+  bgColor: PropTypes.string
 }
 
 export default SideBySide
