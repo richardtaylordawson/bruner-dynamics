@@ -1,14 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-// import Navigation from "./navigation"
+import Navigation from "./../components/navigation"
 // import Footer from "./footer"
 import GlobalTheme from "../theme/global"
 
 const MainLayout = ({ children }) => (
   <>
     <GlobalTheme />
-    {/* <header><Navigation /></header> */}
+    <header><Navigation /></header>
     <main>{children}</main>
     {/* <footer><Footer /></footer> */}
   </>

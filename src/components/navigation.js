@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
 
-import { colors, breakpoints, constraint } from "../theme/index"
+import { colors } from "../theme/index"
 
 import LightLogo from "../images/logo-white.png"
 import DarkLogo from "../images/logo-dark.png"
@@ -12,17 +12,14 @@ const NavBar = styled.section`
   height: 60px;
   position: fixed;
   top: 0;
-  ${breakpoints["medium-down"]} {
-    height: 50px;
-    .nav-item-container, .nav-cta-container { display: none; }
-    .nav-logo img { height: 35px; }
-    .nav-mobile-container { display: block; }
-  }
+
   .nav-link { margin: 0; }
+
   &.light {
     background-color: ${colors.transparent};
     .nav-link { color: ${colors.white}; }
   }
+
   &.dark {
     background-color: ${colors.white};
     box-shadow: 0 2px 2px -2px ${colors.boxShadow};
@@ -31,21 +28,22 @@ const NavBar = styled.section`
 `
 
 const NavContainer = styled.nav`
-  ${constraint}
+  max-width: 1032px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 `;
 
 const NavLinks = styled.div`
+  height: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  .nav-logo {
-    margin: 0;
-    ${breakpoints["medium-down"]} {
-      padding-left: 14px;
-    }
-  }
+
+  .nav-logo { margin: 0; }
+
   .nav-item {
     list-style: none;
     padding: 10px;

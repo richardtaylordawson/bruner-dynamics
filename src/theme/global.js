@@ -1,5 +1,7 @@
 import React from "react"
-import { Global, css } from '@emotion/core'
+import { Global, css } from "@emotion/core"
+
+import { colors } from "./../theme/"
 
 const GlobalTheme = () => (
   <Global
@@ -24,40 +26,63 @@ const GlobalTheme = () => (
       h4,
       h5,
       h6 {
-        color: white;
-        margin-top: 0px;
-        margin-bottom: 15px;
+        font-family: 'Maven Pro', sans-serif;
+        margin-top: 0;
       }
 
       h1 {
-        font-family: 'Maven Pro', sans-serif;
         font-size: 60px;
         text-align: center;
+        margin-bottom: 35px;
+        color: ${colors.white};
       }
 
       h2 {
         font-size: 42px;
         text-align: center;
-        color: #202E39;
+        margin-bottom: 35px;
+        color: ${colors.darkBlue};
+
       }
 
       h3 {
         font-size: 36px;
-        color: #202E39;
+        margin-bottom: 15px;
+        color: ${colors.darkBlue};
       }
 
       h4 {
         font-size: 24px;
+        margin: 0;
+        color: ${colors.white};
+      }
+
+      h5 {
+        font-size: 18px;
+        margin: 0;
+        color: ${colors.white};
       }
 
       p,
       a {
         font-size: 16px;
-        margin-bottom: 30px;
+        margin: 0 0 15px 0;
+        color: ${colors.darkBlue};
       }
 
       a {
         text-decoration: none;
+      }
+
+      .legal {
+        p {
+          font-size: 10px;
+          color: ${colors.lightGray};
+        }
+      }
+
+      .text-blue {
+        color: ${colors.blue}
       }
     `}
   />
