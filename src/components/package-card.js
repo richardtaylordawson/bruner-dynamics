@@ -21,11 +21,11 @@ const Container = styled.div`
 `
 
 const Header = styled.div`
-  border-bottom: 1px solid ${colors.green};
+  border-bottom: 1px solid ${colors.blue};
 
   .name {
     font-size: 12px;
-    color: ${colors.green};
+    color: ${colors.blue};
     margin-bottom: 15px;
   }
 

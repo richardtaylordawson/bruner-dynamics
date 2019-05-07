@@ -1,7 +1,7 @@
 import React from "react"
 
 // Core
-import * as Core from "./../../core/"
+import * as Core from "react-cuttlefish/"
 
 // Layout
 import MainLayout from "./../layouts/main-layout"
@@ -19,8 +19,6 @@ import SatelliteImg from "../images/satellite.png"
 // Theme
 import { colors } from "../theme"
 
-const hc = Core.HelperClasses
-
 const IndexPage = () => (
   <MainLayout>
     <SEO
@@ -28,12 +26,12 @@ const IndexPage = () => (
       keywords={[`bruner`, `internet`, `high-speed`]}
     />
     <Core.Section bgImage={StarsBg}>
-      <h1 className={`${hc.paddingTop45}`}>Discover Brüner Satellite<br/>Internet Bundles</h1>
-      <p className={`${hc.textWhite} ${hc.textCenter} ${hc.marginBottom30}`}>Jimmy B is here to make the world a better place, one connection at a time.</p>
+      <h1 className="pt-45">Discover Brüner Satellite<br/>Internet Bundles</h1>
+      <p className="text-center text-white mb-30">Jimmy B is here to make the world a better place, one connection at a time.</p>
       <ZipCode btnText="Connect with the Bruner" />
     </Core.Section>
     <Core.Section>
-      <h2 className={`${hc.marginBottom15}`}>Brüner’s Best Plans:</h2>
+      <h2>Brüner’s Best Plans:</h2>
       <Core.Columns collapseMargin={true}>
         <PackageCard />
         <PackageCard />
@@ -73,14 +71,19 @@ const IndexPage = () => (
       </Core.Columns>
     </Core.Section>
     <Core.Section bgColor={colors.blue}>
-      <h3 className={`${hc.textWhite} ${hc.textCenter}`}>Get Connected With Brüner Dynamics Today.</h3>
-      <Core.Button />
+      <div className="text-center">
+        <h3 className="text-white">Get Connected With Brüner Dynamics Today.</h3>
+        <Core.Button />
+      </div>
     </Core.Section>
+    <div className="bg-dark test">
+      ajsdlfk
+    </div>
     <Core.Section>
       <Core.Columns>
         <img src={SatelliteImg} alt="Satellite" />
         <div>
-          <h2 className={`${hc.textLeft} ${hc.marginBottom15}`}>What is a Brüner?</h2>
+          <h2 className="text-left">What is a Brüner?</h2>
           <p>You might as well ask what salt tastes like or how water feels. Until you’ve interacted with a Brüner first hand, you can only imagine how great you’ll feel. A warm handshake, a compliment, a rubix cube coaching session, or just a chat about your weekend will leave you feeling better about your self and the world in general.</p>
           <p>Brüner Dynamics is on course to change the world:</p>
           <ul>
@@ -95,33 +98,14 @@ const IndexPage = () => (
       <p>When you sign up for Brüner Dynamics, we make it easy to get connected. We’ll send a professional technician named Ralph to install your new dish in an optimal location and set up your wifi router inside your home.</p>
       <Core.Columns>
         <Core.Card headerColor={colors.blue}>
-          <h3 className={hc.textWhite}>Brüner Satellite Dish</h3>
+          <h3>Brüner Satellite Dish</h3>
           <p>To access Brüner you’ll need a Brüner Satellite Dish. Jimmy’s cousin Ralph will test for the best installation location and install the dish on your abode. He’ll probably stay for dinner.</p>
         </Core.Card>
         <Core.Card headerColor={colors.blue}>
-          <h3 className={hc.textWhite}>Brüner Wi-Fi Modem</h3>
+          <h3>Brüner Wi-Fi Modem</h3>
           <p>The Brüner WiFi Modem gives you wireless internet throughout your home. It also includes a Voice service adapter so we can listen and see if anything cool is happening at your place.</p>
         </Core.Card>
       </Core.Columns>
-    </Core.Section>
-    <Core.Section>
-      <h2>Brüner Dynamics FAQs</h2>
-      <Core.Accordion headerColor={colors.blue} contentColor={colors.gray}>
-        <h5>This is some text</h5>
-        <p>Remember when you were a kid in the 80’s and you were obsessed with space and the future? Well, the future is upon us. We’re still waiting for a nuclear-powered flying Delorean that runs on refuse, but we do have satellites. Hi-tech space craft orbiting our planet, beaming down cat videos to an adoring public. Like the majestic Millennium Falcon from long ago, Brüner Dynamics will put you in touch with the future with a bad-ass satellite dish mounted directly onto your house. “Rogue Two checking in.”</p>
-      </Core.Accordion>
-      <Core.Accordion headerColor={colors.blue} contentColor={colors.gray}>
-        <h5>This is some text</h5>
-        <p>Remember when you were a kid in the 80’s and you were obsessed with space and the future? Well, the future is upon us. We’re still waiting for a nuclear-powered flying Delorean that runs on refuse, but we do have satellites. Hi-tech space craft orbiting our planet, beaming down cat videos to an adoring public. Like the majestic Millennium Falcon from long ago, Brüner Dynamics will put you in touch with the future with a bad-ass satellite dish mounted directly onto your house. “Rogue Two checking in.”</p>
-      </Core.Accordion>
-      <Core.Accordion headerColor={colors.blue} contentColor={colors.gray}>
-        <h5>This is some text</h5>
-        <p>Remember when you were a kid in the 80’s and you were obsessed with space and the future? Well, the future is upon us. We’re still waiting for a nuclear-powered flying Delorean that runs on refuse, but we do have satellites. Hi-tech space craft orbiting our planet, beaming down cat videos to an adoring public. Like the majestic Millennium Falcon from long ago, Brüner Dynamics will put you in touch with the future with a bad-ass satellite dish mounted directly onto your house. “Rogue Two checking in.”</p>
-      </Core.Accordion>
-      <Core.Accordion headerColor={colors.blue} contentColor={colors.gray}>
-        <h5>This is some text</h5>
-        <p>Remember when you were a kid in the 80’s and you were obsessed with space and the future? Well, the future is upon us. We’re still waiting for a nuclear-powered flying Delorean that runs on refuse, but we do have satellites. Hi-tech space craft orbiting our planet, beaming down cat videos to an adoring public. Like the majestic Millennium Falcon from long ago, Brüner Dynamics will put you in touch with the future with a bad-ass satellite dish mounted directly onto your house. “Rogue Two checking in.”</p>
-      </Core.Accordion>
     </Core.Section>
   </MainLayout>
 )

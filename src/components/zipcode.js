@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 const ZipcodeInputGroup = styled.div`
   display: flex;
   width: 405px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
   font-size: 16px;
   height: 45px;
 

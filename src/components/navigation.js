@@ -12,11 +12,11 @@ const NavBar = styled.section`
   height: 60px;
   position: fixed;
   top: 0;
+  z-index: 999999;
 
   .nav-link { margin: 0; }
 
   &.light {
-    background-color: ${colors.transparent};
     .nav-link { color: ${colors.white}; }
   }
 

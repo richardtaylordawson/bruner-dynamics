@@ -33,7 +33,7 @@ const GlobalTheme = () => (
       h1 {
         font-size: 60px;
         text-align: center;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
         color: ${colors.white};
       }
 
@@ -81,8 +81,16 @@ const GlobalTheme = () => (
         }
       }
 
-      .text-blue {
-        color: ${colors.blue}
+      .test {
+        height: 500px;
+      }
+
+      .test::after {
+        content: ' ';
+        color: red;
+        height: 50px;
+        width: 50px;
+        display: block;
       }
     `}
   />
