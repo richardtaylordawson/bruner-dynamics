@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
-import { Breakpoints } from "easy-as-pie-ui"
+import { Breakpoints, Button } from "easy-as-pie-ui"
+import { InstallButton } from "./install-button"
 import { Colors } from "../theme/colors"
 import LightLogo from "../images/logo-white.png"
 import DarkLogo from "../images/logo-dark.png"
@@ -80,6 +81,7 @@ export class Navigation extends Component {
               <h4 className="nav-link">Call Now 1.888.888.8888</h4>
             </a>
           </div>
+          <InstallButton />
           <div
             className="mobile-nav d-none-lg-up"
             onClick={this.toggleMobile.bind(this)}
@@ -134,6 +136,16 @@ const NavBar = styled.section`
 
   .mobile-nav {
     cursor: pointer;
+  }
+
+  .install-btn {
+    position: absolute;
+    right: 50px;
+    top: 12px;
+
+    button {
+      padding: 5px 10px;
+    }
   }
 
   .nav-item-container {

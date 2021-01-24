@@ -5,6 +5,7 @@ module.exports = {
     description: `Demo website built using Gatsby, React & Emotion CSS`,
     twitterHandle: `@richard_codes`,
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -34,6 +35,21 @@ module.exports = {
         theme_color: `#061833`,
         display: `standalone`,
         icon: `src/images/favicon.png`,
+        description: `Demo website built using Gatsby, React & Emotion CSS`,
+        screenshots: [
+          {
+            src:
+              "https://bruner-dynamics.richardtaylordawson.com/images/screenshots/home.png",
+          },
+          {
+            src:
+              "https://bruner-dynamics.richardtaylordawson.com/images/screenshots/faq.png",
+          },
+          {
+            src:
+              "https://bruner-dynamics.richardtaylordawson.com/images/screenshots/what-is-a-bruner.png",
+          },
+        ],
       },
     },
     `gatsby-plugin-offline`,

@@ -6,6 +6,11 @@ import { GlobalTheme } from "./../theme/globalTheme"
 import { Navigation } from "../components/navigation"
 import { Footer } from "../components/footer"
 
+if (typeof window !== "undefined") {
+  // Only including when window is defined because otherwise it fails the build
+  require("@pwabuilder/pwainstall")
+}
+
 export const MainLayout = ({ children }) => (
   <>
     <EasyAsPieUITheme colors={Colors} />
