@@ -26,8 +26,8 @@ export const InstallButton = () => {
         setShowInstallBtn(
           isIOS ||
             (isSupportingBrowser &&
-              (localStorage.getItem("calculatorInstalled") === "" ||
-                localStorage.getItem("calculatorInstalled") === "false"))
+              (localStorage.getItem("brunerDynamicsInstalled") === "" ||
+                localStorage.getItem("brunerDynamicsInstalled") === "false"))
         )
       }
 
