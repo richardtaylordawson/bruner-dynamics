@@ -3,9 +3,7 @@ module.exports = {
     siteUrl: `https://bruner-dynamics.richardtaylordawson.com`, // for gatsby-plugin-sitemap
     title: `Bruner Dynamics`,
     description: `Demo website built using Gatsby, React & Emotion CSS`,
-    twitterHandle: `@richard_codes`,
   },
-
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
