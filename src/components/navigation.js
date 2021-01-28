@@ -111,6 +111,10 @@ const NavBar = styled.section`
     margin: 0;
   }
 
+  pwa-install::part(openButton) {
+    display: none;
+  }
+
   &.light {
     .nav-link {
       color: ${Colors.white};

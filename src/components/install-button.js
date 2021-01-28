@@ -17,12 +17,19 @@ export const InstallButton = () => {
         "BeforeInstallPromptEvent"
       )
 
-      setShowInstallBtn(
-        (isIOS && isSupportingBrowser) ||
-          (isSupportingBrowser &&
-            (localStorage.getItem("brunerDynamicsInstalled") === "" ||
-              localStorage.getItem("brunerDynamicsInstalled") === "false"))
-      )
+      const isStandalone = window.matchMedia("(display-mode: standalone)")
+        .matches
+
+      if (isStandalone) {
+        setShowInstallBtn(false)
+      } else {
+        setShowInstallBtn(
+          (isIOS && isSupportingBrowser) ||
+            (isSupportingBrowser &&
+              (localStorage.getItem("brunerDynamicsInstalled") === "" ||
+                localStorage.getItem("brunerDynamicsInstalled") === "false"))
+        )
+      }
 
       // This will only be called if the browser is eligible and PWA has NOT been installed yet
       window.addEventListener("beforeinstallprompt", () => {
