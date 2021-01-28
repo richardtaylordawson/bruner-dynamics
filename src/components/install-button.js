@@ -60,7 +60,7 @@ export const InstallButton = () => {
       {installButton}
       <pwa-install
         usecustom
-        iconpath="https://bruner-dynamics.richardtaylordawson.com/images/favicon.svg"
+        iconpath="https://bruner-dynamics.richardtaylordawson.com/images/favicon.png"
         manifestpath="/manifest.webmanifest"
       ></pwa-install>
     </>
