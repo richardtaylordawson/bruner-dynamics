@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#061833`,
         theme_color: `#061833`,
         display: `standalone`,
-        icon: `src/images/favicon.svg`,
+        icon: `src/images/favicon.png`,
         description: `Demo website built using Gatsby, React & Emotion CSS`,
         screenshots: [
           {
