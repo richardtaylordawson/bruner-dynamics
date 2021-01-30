@@ -37,7 +37,7 @@ module.exports = {
         screenshots: [
           {
             src:
-              "https://bruner-dynamics.richardtaylordawson.com/images/screenshots/home.png",
+              "https://bruner-dynamics.richardtaylordawson.com/images/screenshots/screen.png",
           },
           {
             src:
@@ -45,7 +45,7 @@ module.exports = {
           },
           {
             src:
-              "https://bruner-dynamics.richardtaylordawson.com/images/screenshots/what-is-a-bruner.png",
+              "https://bruner-dynamics.richardtaylordawson.com/images/screenshots/package-cards.png",
           },
         ],
       },
