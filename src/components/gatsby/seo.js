@@ -113,6 +113,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           name: `twitter:creator`,
           content: `@richard_codes`,
         },
+        {
+          name: `apple-mobile-web-app-status-bar-style`,
+          content: `white`,
+        },
       ]
         .concat(
           keywords.length > 0
