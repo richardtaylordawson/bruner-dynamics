@@ -114,6 +114,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `@richard_codes`,
         },
         {
+          name: `apple-mobile-web-app-capable`,
+          content: `yes`,
+        },
+        {
           name: `apple-mobile-web-app-status-bar-style`,
           content: `default`,
         },

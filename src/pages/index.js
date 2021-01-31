@@ -107,11 +107,7 @@ const IndexPage = () => (
         </h3>
         <Button color="white">Call 1.888.888.8888</Button>
       </div>
-      <h3 className="text-center d-none-lg-up">
-        Click to Call
-        <br />
-        Call 1.888.888.8888
-      </h3>
+      <h3 className="text-center d-none-lg-up">Call 1.888.888.8888</h3>
     </Section>
     <Section>
       <Columns>
