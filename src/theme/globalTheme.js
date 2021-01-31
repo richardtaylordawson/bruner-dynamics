@@ -16,6 +16,10 @@ export const GlobalTheme = () => (
         color: ${Colors.black};
       }
 
+      body {
+        background-color: ${Colors.white};
+      }
+
       h1,
       h2,
       h3,
