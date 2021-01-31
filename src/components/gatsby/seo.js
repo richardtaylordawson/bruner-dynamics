@@ -119,7 +119,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `apple-mobile-web-app-status-bar-style`,
-          content: `black-translucent`,
+          content: `default`,
         },
       ]
         .concat(
