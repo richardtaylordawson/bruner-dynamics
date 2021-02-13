@@ -104,14 +104,6 @@ function SEO({ description, lang, meta, keywords, title }) {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
-        {
-          name: `twitter:site`,
-          content: `@richard_codes`,
-        },
-        {
-          name: `twitter:creator`,
-          content: `@richard_codes`,
-        },
       ]
         .concat(
           keywords.length > 0
