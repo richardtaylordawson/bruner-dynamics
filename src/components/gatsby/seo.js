@@ -27,7 +27,6 @@ function SEO({ description, lang, meta, keywords, title }) {
       }}
       link={[{ rel: "shortcut icon", type: "image/png", href: `${Favicon}` }]}
       title={`${title}`}
-      titleTemplate={`%s - Richard Taylor Dawson`}
       meta={[
         {
           name: `description`,
