@@ -8,11 +8,3 @@
 $ yarn
 $ yarn develop
 ```
-
-## Deployment
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5772a742-8680-4cc3-88d8-7fce37641aae/deploy-status)](https://app.netlify.com/sites/rtd-bruner-dynamics/deploys)
-
-## View Project
-
-<https://bruner-dynamics.richardtaylordawson.com>
