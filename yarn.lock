@@ -5449,7 +5449,6 @@ __metadata:
     easy-as-pie-ui: "npm:^1.0.0"
     gatsby: "npm:^5.16.1"
     gatsby-image: "npm:^3.11.0"
-    gatsby-plugin-google-analytics: "npm:^5.16.0"
     gatsby-plugin-react-helmet: "npm:^6.16.0"
     gatsby-plugin-sharp: "npm:^5.16.0"
     gatsby-plugin-sitemap: "npm:^6.16.0"
@@ -8482,21 +8481,6 @@ __metadata:
   peerDependencies:
     "@parcel/core": ^2.0.0
   checksum: 10c0/a6e1b9052ed34d23ce93691ec4477f31116b467298eb31b47b1aec8714192c386cebdd554285411fa2891503f97fbd5840dde49a00a2423d18a4c23546f5c3d7
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-google-analytics@npm:^5.16.0":
-  version: 5.16.0
-  resolution: "gatsby-plugin-google-analytics@npm:5.16.0"
-  dependencies:
-    "@babel/runtime": "npm:^7.20.13"
-    minimatch: "npm:^3.1.2"
-    web-vitals: "npm:^1.1.2"
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    react: ^18.0.0 || ^19.0.0 || ^0.0.0
-    react-dom: ^18.0.0 || ^19.0.0 || ^0.0.0
-  checksum: 10c0/719417190bf3c933dc66156bb6c0a7bbc0a690411b33c4150678c16a63089dba1af256efb4dddc63e02e716bbd1ba567eeaff08451ef29665981d5131751cc28
   languageName: node
   linkType: hard
 
@@ -14909,13 +14893,6 @@ __metadata:
   version: 1.2.2
   resolution: "weak-lru-cache@npm:1.2.2"
   checksum: 10c0/744847bd5b96ca86db1cb40d0aea7e92c02bbdb05f501181bf9c581e82fa2afbda32a327ffbe75749302b8492ab449f1c657ca02410d725f5d412d1e6c607d72
-  languageName: node
-  linkType: hard
-
-"web-vitals@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "web-vitals@npm:1.1.2"
-  checksum: 10c0/9521ea2e8ca2e4446ba8e3d5430b0c9a9a07e0d6f468a90dc5fab2bab524fb1a699f3874ea392c9e35a63dcf3651b40130d58ebd78e53a406cb9622049bf1403
   languageName: node
   linkType: hard
 
