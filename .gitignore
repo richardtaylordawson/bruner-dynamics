@@ -69,4 +69,6 @@ yarn-error.log
 .yarn-integrity
 .vercel
 .env*
-.yarn
+.yarn/*
+!.yarn/patches/
+!.yarn/patches/**
